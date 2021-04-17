@@ -1,0 +1,12 @@
+{{ $currentPage := . -}}
+
+{{ with .Site.GetPage $currentPage.File.Dir -}}
+{{ range .Pages -}}
+<a href="{{ .URL | relURL }}">
+  <ul class="list-unstyled">
+    {{ .Name }}
+    <li>{{ .Description }}</li>
+  </ul>
+</a>
+{{ end -}}
+{{ end -}}
