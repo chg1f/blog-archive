@@ -1,0 +1,14 @@
+[[main]]
+  name = "Categories"
+  url = "/blog/"
+  weight = 10
+
+[[main]]
+  name = "Tags"
+  url = "/tags/"
+  weight = 20
+
+[[footer]]
+  name = "AboutMe"
+  url = "/about/"
+  weight = 100
