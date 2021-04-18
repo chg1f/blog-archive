@@ -5,7 +5,6 @@ categories:
 - bug
 tags:
 - docker
-draft: true
 ---
 
 ## 问题/Problem

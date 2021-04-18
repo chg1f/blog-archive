@@ -6,7 +6,6 @@ categories:
 tags:
 - android
 - mount
-draft: true
 ---
 
 ## Question

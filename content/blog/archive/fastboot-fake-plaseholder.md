@@ -15,7 +15,6 @@ toc: true # Controls if a table of contents should be generated for first-level 
 categories:
   - bug
 tags:
-draft: true # Sets whether to render this page. Draft of true will not be rendered.
 ---
 
 **Insert Lead paragraph here.**

@@ -5,7 +5,6 @@ categories:
 - bug
 tags:
 - postwoman
-draft: true
 ---
 
 ## 问题/Problem

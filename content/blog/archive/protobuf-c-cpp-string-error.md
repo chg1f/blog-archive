@@ -5,7 +5,6 @@ categories:
 - bug
 tags:
 - protobuf
-draft: true
 ---
 
 ## 问题/Problem

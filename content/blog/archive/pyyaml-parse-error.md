@@ -6,7 +6,6 @@ categories:
 tags:
 - yaml
 - docker-compose
-draft: true
 ---
 
 ## 问题/Problem

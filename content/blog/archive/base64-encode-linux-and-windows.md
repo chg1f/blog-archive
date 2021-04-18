@@ -7,7 +7,6 @@ tags:
 - linux
 - windows
 - base64
-draft: true
 ---
 
 ## 问题/Problem

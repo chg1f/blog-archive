@@ -6,7 +6,6 @@ categories:
 tags:
 - ngrok
 - dns
-draft: true
 ---
 
 ## 问题/Problem

@@ -5,7 +5,6 @@ categories:
 - bug
 tags:
 - nginx
-draft: true
 ---
 
 ## 问题/Problem

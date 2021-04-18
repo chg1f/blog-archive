@@ -5,7 +5,6 @@ categories:
 - bug
 tags:
 - demo
-draft: true
 ---
 
 ## 问题/Problem

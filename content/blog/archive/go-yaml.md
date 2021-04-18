@@ -6,7 +6,6 @@ categories:
 tags:
 - golang
 - yaml
-draft: true
 ---
 
 ## 问题/Problem
