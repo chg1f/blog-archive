@@ -13,7 +13,27 @@
 {{ end }}
 
 {{ define "sidebar-prefooter" }}
+
 <section class="section section-sm">
+  <div class="text-center">
+    <h2>LastUpdate</h2>
+  </div>
+  {{ range first 5 .Site.AllPages.ByLastmod.Reverse }}
+  <div class="container">
+    <div class="row justify-content-center text-center">
+      <a class="col-lg-5" href="{{ .RelPermalink }}">
+        <h2 class="h4">{{ .Title -}}</h2>
+        <p>{{ .Description -}}</p>
+      </a>
+    </div>
+  </div>
+  {{ end }}
+</section>
+
+<section class="section section-sm">
+  <div class="text-center">
+    <h2>Index</h2>
+  </div>
   {{ with .Site.GetPage "/blog" }}
   <div class="container">
     <div class="row justify-content-center text-center">
@@ -27,6 +47,7 @@
   </div>
   {{ end }}
 </section>
+
 {{ end }}
 
 {{ define "sidebar-footer" }}
