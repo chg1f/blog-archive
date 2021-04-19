@@ -1,9 +1,9 @@
 ---
-title: "Android"
-description: "折腾安卓"
+title: "TechStack"
+description: "折腾技术"
 date: 2020-10-06T08:49:55+00:00
 lastmod: 2020-10-06T08:49:55+00:00
 draft: false
-weight: 30
+weight: 10
 images: []
 ---
