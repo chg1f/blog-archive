@@ -24,6 +24,7 @@
       <a class="col-lg-5" href="{{ .RelPermalink }}">
         <h2 class="h4">{{ .Title -}}</h2>
         <p>{{ .Description -}}</p>
+        {{ partial "main/meta.html" . -}}
       </a>
     </div>
   </div>
