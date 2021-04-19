@@ -4,7 +4,6 @@ description: "安卓手机获取ROOT权限"
 date: 2021-04-18T14:31:45+08:00
 lastmod: 2021-04-18T14:31:45+08:00
 images: ["howtoroot.jpg"]
-contributors: []
 ---
 
 0.
