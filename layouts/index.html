@@ -16,7 +16,7 @@
 
 <section class="section section-sm">
   <div class="text-center">
-    <h2>最近折腾</h2>
+    <h2>最近更新</h2>
   </div>
   {{ range first 5 .Site.AllPages.ByLastmod.Reverse }}
   <div class="container">
@@ -33,7 +33,7 @@
 
 <section class="section section-sm">
   <div class="text-center">
-    <h2>折腾主题</h2>
+    <h2>主题</h2>
   </div>
   {{ with .Site.GetPage "/blog" }}
   <div class="container">

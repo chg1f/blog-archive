@@ -1,6 +1,6 @@
 ---
 title: "Interested"
-description: "瞎折腾的"
+description: "感兴趣的，好玩的东西"
 date: 2020-10-06T08:49:55+00:00
 lastmod: 2020-10-06T08:49:55+00:00
 draft: false

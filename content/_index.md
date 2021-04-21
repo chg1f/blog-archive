@@ -8,45 +8,47 @@ draft: false
 images: []
 ---
 
-# TODO
+# TODO LIST
 
-## POSTS
+## BLOG POSTS
 
-### Android
+### BugTrack
 
-- How To Root
+### Interesed
+
+### TechStack
+
+- File system
+  > [Archive]({{< relref "blog/archive/partition-disk" >}})
+- How to boot machine
+  > [Archive]({{< relref "blog/archive/boot-device" >}})
+- Kubenetes
+- Golang
+
+### ToolChain
+
+- My dots
+- How to root android
   > [Archive]({{< relref "blog/archive/android-flusing-device" >}})
-- Whats Is boot.img
-- Whats Does payload.bin Has
-
-### Linux
-
+- tmux
+- readline
+- vim
+- Xresource
+- ruxt
+- i3wm
+- iOS development environment
+- Android development environment
 - Linux Distribution
   > [Archive]({{< relref "blog/archive/install-gentoo-and-archlinux" >}})
-- Boot The Machine
-  > [Archive]({{< relref "blog/archive/boot-device" >}})
-- Format File System
-  > [Archive]({{< relref "blog/archive/partition-disk" >}})
-- Use i3wm
-- My Dots
 
-### Container
+### Analysis
 
-- Learning Docker
-- Learning Kubernetes
-
-### Protocol
-
-- VLESS
-- VMess
-
-### Security
-
-- OWASP
-- CVE
+- Xray
+- What is boot.img
+- Ksubdomain/Subfinder
+- Ngrok
+- Protocols
 
 ## THIS BLOG
 
-- CICD
-- archetypes
-
+- Use tags and categories
