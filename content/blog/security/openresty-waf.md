@@ -8,10 +8,7 @@ weight: 50
 tags:
  - WAF
  - openresty
-images: ["openresty-waf.jpg"]
 ---
-
-{{< img src="openresty-waf.jpg" alt="Openresty Waf" caption="Openresty Waf" class="wide" >}}
 
 ## Environment
 
