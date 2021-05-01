@@ -1,0 +1,11 @@
+{{ $topic := .CurrentSection }}
+{{ $tags := .Params.tags }}
+<p>
+  <small>
+    LastMod {{ .Lastmod.Format "January 2, 2006" -}}&nbsp;&hyphen;&nbsp;
+    {{ .ReadingTime -}}&nbsp;min read&nbsp;&hyphen;&nbsp;
+    {{ .WordCount -}}&nbsp;words count
+    {{ if and ( $topic ) ( eq $topic.FirstSection.Title "Blog" ) }}<br/>Topic <a href="{{ $topic.RelPermalink }}">{{ $topic.Title }}</a>{{ end }}
+    {{ if $tags }}<br/>Tags {{ range $tags }}{{ $tag := . -}}<a href="/tags/{{ $tag }}">{{ $tag }} </a>{{ end }}{{ end }}
+  </small>
+<p>

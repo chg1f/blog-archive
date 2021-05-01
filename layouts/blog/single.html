@@ -1,4 +1,6 @@
 {{ define "main" }}
+{{ . }}
+{{ .Kind }}
   <div class="row flex-xl-nowrap">
     <div class="col-lg-5 col-xl-4 docs-sidebar">
       <nav class="docs-links" aria-label="Main navigation">
@@ -26,7 +28,7 @@
       {{ end }}
       <div class="blog-header">
         <h1>{{ .Title }}</h1>
-        {{ partial "main/meta.html" . }}
+        {{ partial "main/page-meta.html" . }}
       </div>
       {{ .Content }}
       {{ if .Site.Params.editPage -}}

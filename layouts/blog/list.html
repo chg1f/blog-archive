@@ -1,4 +1,29 @@
 {{ define "main" }}
+
+{{ if eq .FirstSection .CurrentSection }}
+<div class="row justify-content-center">
+  <div class="col-md-12 col-lg-10 col-xl-8">
+    {{ range (where .Data.Pages "Kind" "eq" "section") -}}
+    <div class="card-list">
+      <div class="card">
+        <div class="card-body">
+          <h3>
+            <a href="{{ .RelPermalink }}">{{ .Params.title }}</a>
+          </h3>
+          <p>{{ .Params.lead | safeHTML }}</p>
+          {{ range first 5 (where .Pages.ByLastmod.Reverse "Kind" "eq" "page") }}
+          <div>
+            <small><a href="{{ .RelPermalink }}">{{ .Title -}}</a>&nbsp;&hyphen;&nbsp;LastMod {{ .Lastmod.Format "January 2, 2006" -}}</small>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+    {{ end -}}
+  </div>
+</div>
+
+{{ else }}
 <div class="row justify-content-center">
   <div class="col-md-12 col-lg-10 col-xl-8">
     <article>
@@ -6,16 +31,21 @@
       <div class="text-center">{{ .Content }}</div>
       <div class="card-list">
         {{ range .Data.Pages -}}
-          <div class="card">
-            <div class="card-body">
-              <h2 class="h3"><a class="stretched-link text-body" href="{{ .RelPermalink }}">{{ .Params.title }}</a></h2>
-              <p>{{ .Params.lead | safeHTML }}</p>
-              {{ partial "main/meta.html" . -}}
-            </div>
+        <div class="card">
+          <div class="card-body">
+            <h3>
+              <a href="{{ .RelPermalink }}">{{ .Params.title }}</a>
+            </h3>
+            <p>{{ .Params.lead | safeHTML }}</p>
+            {{ partial "main/page-meta.html" . }}
           </div>
+        </div>
         {{ end -}}
       </div>
     </article>
   </div>
 </div>
+
+{{ end }}
+
 {{ end }}
