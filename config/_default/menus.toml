@@ -1,10 +1,10 @@
 [[main]]
-  name = "Topic"
+  name = "Categories"
   url = "/blog/"
   weight = 10
 
 [[main]]
-  name = "Tag"
+  name = "Tags"
   url = "/tags/"
   weight = 20
 

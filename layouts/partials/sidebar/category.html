@@ -1,0 +1,22 @@
+{{ $currentCategory := .CurrentSection -}}
+
+<div>
+  <strong>Categories</strong>
+</div>
+<div>
+  <a href="{{ $currentCategory.RelPermalink }}"><strong>{{ $currentCategory.Title }}</strong></a>
+  {{ range $currentCategory.Pages.ByLastmod.Reverse -}}
+  <div>
+    <a href="{{ .RelPermalink }}"><small>{{ .Title -}}</small></a>
+  </div>
+  {{ end -}}
+  {{ with .GetPage "/blog" }}
+  {{ range .Pages -}}
+  {{ if ne $currentCategory . }}
+  <div>
+    <a href="{{ .RelPermalink }}"><strong>{{ .Title -}}</strong></a>
+  </div>
+  {{ end }}
+  {{ end -}}
+  {{ end -}}
+</div>

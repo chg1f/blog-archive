@@ -1,15 +1,13 @@
 {{ define "main" }}
 
-{{ if eq .FirstSection .CurrentSection }}
+{{ if eq . (.Site.GetPage "/tags") }}
 <div class="row justify-content-center">
   <div class="col-md-12 col-lg-10 col-xl-8">
-    {{ range (where .Pages.ByLastmod.Reverse "Kind" "eq" "section") -}}
+    {{ range .Pages.ByLastmod.Reverse -}}
     <div class="card-list">
       <div class="card">
         <div class="card-body">
-          <h3>
-            <a href="{{ .RelPermalink }}">{{ .Params.title }}</a>
-          </h3>
+          <strong><a href="{{ .RelPermalink }}">{{ .Params.title }}</a></strong>
           <p>{{ .Params.lead | safeHTML }}</p>
           {{ range first 5 (where .Pages.ByLastmod.Reverse "Kind" "eq" "page") }}
           <div>

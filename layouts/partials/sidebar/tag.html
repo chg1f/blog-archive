@@ -1,0 +1,12 @@
+{{ $currentTags := .Params.tags -}}
+
+<div>
+  <strong>Tags</strong>
+</div>
+<div>
+  {{ range $tagName, $taxonomy := .Site.Taxonomies.tags }}
+  <div>
+    <a href="/tags/{{ $tagName }}"><strong>{{ $tagName }}</strong>[{{ .Count }}]</a>
+  </div>
+  {{ end }}
+</div>
