@@ -10,7 +10,6 @@ tags:
 
 ## Question
 
+## Debugging
+
 ## Fixed
-
-## Reason
-

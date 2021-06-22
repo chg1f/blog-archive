@@ -33,7 +33,7 @@ $ localectl list-keymaps
 Failed to read list of keymaps: No such file or directory
 ```
 
-## Reason
+## Debugging
 
 > https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=790955
 
@@ -63,6 +63,7 @@ $ sudo apt install console-data
 ```
 2. 根据上面的引用`issus`好像是`debian`一些兼容性的不同,官方推荐使用别的方式去设置键盘
 > https://benohead.com/blog/2012/04/27/debian-change-the-keyboard-layout-from-the-console/
+>
 > https://wiki.debian.org/Keyboard
 ```bash
 $ dpkg-reconfigure console-data

@@ -32,20 +32,27 @@ $ ip a
 ...
 ```
 
-## Fixed
+## Debugging
 
 > https://wireless.wiki.kernel.org/en/users/drivers/iwlwifi
+>
 > https://www.intel.com/content/www/us/en/support/articles/000005511/wireless.html
+
 ```bash
 $ ls /lib/firmware/iwlwifi-*.ucode
 ...
 iwlwifi-ty-59.601f3a66.0.tgz
 ...
 ```
+
 > https://community.intel.com/t5/Wireless/Linux-driver-Wifi-6-AX210-NGW/td-p/1249283
+>
 > https://www.reddit.com/r/pop_os/comments/khhufu/is_there_a_way_to_make_intel_ax210_wifi_6e/
+>
 > https://www.kernel.org/
+>
 > https://www.kali.org/docs/development/recompiling-the-kali-linux-kernel/
+
 ```bash
 $ ls /usr/src/linux-5.12.3
 $ cp /boot/config-...kali...-amd64 .config
@@ -56,7 +63,7 @@ $ sudo dpkg -i ../linux-image-5.12.3-custom_5.12.3-1_amd64.deb
 $ reboot
 ```
 
-## Reason
+## Fixed
 
 一开始以为是`linux-firmware`/`iwlwifi`没有最新版本的躯动，检查后发现有
 然后是在看发现相关躯动要在`5.11+`和`5.12`在支持
