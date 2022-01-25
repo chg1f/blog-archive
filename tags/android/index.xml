@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>android on</title><link>https://oldblog.chongiofai.com/tags/android/</link><description>Recent content in android on</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><lastBuildDate>Wed, 09 Dec 2020 13:12:12 +0800</lastBuildDate><atom:link href="https://oldblog.chongiofai.com/tags/android/index.xml" rel="self" type="application/rss+xml"/><item><title>Bug Mount Android Image File</title><link>https://oldblog.chongiofai.com/blog/archive/mount-android-image-file/</link><pubDate>Wed, 09 Dec 2020 13:12:12 +0800</pubDate><guid>https://oldblog.chongiofai.com/blog/archive/mount-android-image-file/</guid><description>Question $ file system.img system.img: Linux rev 1.0 ext2 filesystem data, UUID=4a50462e-52cf-5fab-87a1-49824cdf6b4f (extents) (large files) (huge files) $ sudo mount -t auto system.img system mount: system: failed to setup loop device for system.img. $ sudo mount -t ext2 system.img system mount: system: wrong fs type, bad option, bad superblock on /dev/loop0, missing codepage or helper program, or other error. Tried mount with loop,offset $ file system.img system.img: Linux rev 1.</description></item><item><title>Adb Device No Permissions</title><link>https://oldblog.chongiofai.com/blog/archive/adb-device-no-permissions/</link><pubDate>Wed, 09 Dec 2020 13:06:13 +0800</pubDate><guid>https://oldblog.chongiofai.com/blog/archive/adb-device-no-permissions/</guid><description>Question $ adb devices List of devices attached 00000000 no permissions (user in plugdev group; are your udev rules wrong?); see [http://developer.android.com/tools/device.html] Fixed $ sudo adb kill-server $ sudo pkill adb $ sudo adb start-server $ adb devices List of devices attached 00000000 unauthorized</description></item><item><title>Android Flashing Device</title><link>https://oldblog.chongiofai.com/blog/archive/android-flusing-device/</link><pubDate>Mon, 23 Nov 2020 19:18:05 +0800</pubDate><guid>https://oldblog.chongiofai.com/blog/archive/android-flusing-device/</guid><description>Android刷机 环境 OnePlus8Pro
+Kali Rolling
+adb
+Android Debug Bridge version 1.0.39 Version 1:8.1.0+r23-8 Installed as /usr/lib/android-sdk/platform-tools/adb
+sudo apt install android-tools-adb
+fastboot
+fastboot version 1:8.1.0+r23-8 Installed as /usr/lib/android-sdk/platform-tools/fastboot
+sudo apt install android-tools-fastboot
+基础 解锁OEM
+https://source.android.com/setup/build/running
+进入FastbootMode
+进入RecoveryMode
+安装Magisk/MagiskManager
+官方网站：　https://magiskmanager.com/
+玩起来 官方OTA全量包中解压，此处使用OnePlus8ProHydrogen_15.</description></item></channel></rss>

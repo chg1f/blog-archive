@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>archlinux on</title><link>https://oldblog.chongiofai.com/tags/archlinux/</link><description>Recent content in archlinux on</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><lastBuildDate>Sun, 06 Dec 2020 09:13:12 +0800</lastBuildDate><atom:link href="https://oldblog.chongiofai.com/tags/archlinux/index.xml" rel="self" type="application/rss+xml"/><item><title>Install Gentoo/Archlinux</title><link>https://oldblog.chongiofai.com/blog/archive/install-gentoo-and-archlinux/</link><pubDate>Sun, 06 Dec 2020 09:13:12 +0800</pubDate><guid>https://oldblog.chongiofai.com/blog/archive/install-gentoo-and-archlinux/</guid><description>这理又重装了Gentoo,Archlinux是之前安装的,只在记忆中简单对比一下大概的
+约定名词 安装环境: 安装Gentoo/Archlinux的操作环境,非安装后的新系统环境,通常为LiveCD的Live环境中 目标环境: 安装Gentoo/Archlinux的新系统环境,为安装后结果,此文以/mnt为挂载目标(与Archlinux一致,Gentoo官方文档是以/mnt/gentoo为例)
+一点小理解 https://www.gentoo.org/ https://www.archlinux.org/
+Gentoo Archlinux 一句话 配置自由度极高(也有人说OverEninerring) KISS(Keep it Simple, Stupid) 硬件支持 反正内核自已编译程序自已编译&amp;hellip; 官方支持x86 INIT OpenRC(default)/Systemd Systemd 包管理 portage(源码编译,提供USE,SLOT等超赞功能) pacman(二进制分发) 安装环境 基本完全不依赖LiveCD,可在任何安装环境下使用stage包开始构建新系统 依赖LiveCD一些工具 玩起来 Gentoo
+https://wiki.gentoo.org/wiki/Installation https://wiki.gentoo.org/wiki/Handbook:Main_Page
+Archlinux
+https://wiki.archlinux.org/index.php/installation_guide
+安装介质 制作LiveUSB</description></item></channel></rss>

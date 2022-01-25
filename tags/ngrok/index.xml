@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ngrok on</title><link>https://oldblog.chongiofai.com/tags/ngrok/</link><description>Recent content in ngrok on</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><lastBuildDate>Thu, 07 Nov 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://oldblog.chongiofai.com/tags/ngrok/index.xml" rel="self" type="application/rss+xml"/><item><title>Ngrok Customized</title><link>https://oldblog.chongiofai.com/blog/archive/ngrok-customized/</link><pubDate>Thu, 07 Nov 2019 00:00:00 +0000</pubDate><guid>https://oldblog.chongiofai.com/blog/archive/ngrok-customized/</guid><description>client Run-SetupModel-newClientModel建立ngrokd-ngroko信道 好像無加密
+ctl-clientModel.Run-control開始使用model向ngrokd建立連接 newClientModel??為什么給configPath不是config,因為服务器給出新authToken更新
+clientModel.update更新control tunnel下分拆可能會引到重復NewTunnel Proxy Agent SaveAuthToken保存完Token不更新內存中的conifg???
+asset脚本會先把asset文件的數据生成assets_release.go二進制導入版,然后編譯時直接放進程序中,在請求時會直接把路徑換成已轉二進制數据寫入 ngrok-&amp;gt;ngrokd &amp;lt;-msg.Auth驗証建立信道 -&amp;gt;msg.AuthResp請求結果 &amp;lt;-msg.ReqTunnel請求建立Tunnel -&amp;gt;NewTunnel註冊結果 ** -&amp;gt;Pong心跳 ** -&amp;gt;ReqProxy請求 #&amp;lt;-如果有設HTTPPROXY測轉發連接,失敗結束 &amp;lt;-msg.ReqProxy确認 -&amp;gt;msg.StartProxy服务器确認返回URL比對自已URL
+Control
+ClientModel ###ENV DEBUG
+server net.Listen-conn.Listen-http.startHttpListener
+tunnelListener開启註冊監听 !TODO: 加密 !TODO: HTTP信道 !TODO: 一個服务多個同協議
+ctl.manager核心
+ctl.in讀入ctl,ctl.out ctl寫出???有點困暈
+ctl.stopper等待其他gorounit shutdown信号</description></item><item><title>Ngrok Tunnel No Found</title><link>https://oldblog.chongiofai.com/blog/archive/ngrok-tunnel-not-found/</link><pubDate>Tue, 05 Nov 2019 00:00:00 +0000</pubDate><guid>https://oldblog.chongiofai.com/blog/archive/ngrok-tunnel-not-found/</guid><description>问题/Problem TODO 原因/Reason ngrokd服務器無法路由請求,在ngrok1.X中subdomain為三級域名,DNS需設置三級域名解析到ngrokd服務器,或使用hostname重寫為二級域名 解决/Fix 解決路由問題 godday dns的三級域名解析方法為主机: .</description></item></channel></rss>

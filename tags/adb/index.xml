@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>adb on</title><link>https://oldblog.chongiofai.com/tags/adb/</link><description>Recent content in adb on</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><lastBuildDate>Mon, 23 Nov 2020 19:18:05 +0800</lastBuildDate><atom:link href="https://oldblog.chongiofai.com/tags/adb/index.xml" rel="self" type="application/rss+xml"/><item><title>Android Flashing Device</title><link>https://oldblog.chongiofai.com/blog/archive/android-flusing-device/</link><pubDate>Mon, 23 Nov 2020 19:18:05 +0800</pubDate><guid>https://oldblog.chongiofai.com/blog/archive/android-flusing-device/</guid><description>Android刷机 环境 OnePlus8Pro
+Kali Rolling
+adb
+Android Debug Bridge version 1.0.39 Version 1:8.1.0+r23-8 Installed as /usr/lib/android-sdk/platform-tools/adb
+sudo apt install android-tools-adb
+fastboot
+fastboot version 1:8.1.0+r23-8 Installed as /usr/lib/android-sdk/platform-tools/fastboot
+sudo apt install android-tools-fastboot
+基础 解锁OEM
+https://source.android.com/setup/build/running
+进入FastbootMode
+进入RecoveryMode
+安装Magisk/MagiskManager
+官方网站：　https://magiskmanager.com/
+玩起来 官方OTA全量包中解压，此处使用OnePlus8ProHydrogen_15.</description></item></channel></rss>
